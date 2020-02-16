@@ -26,7 +26,7 @@ class Square extends Polygon{
     return (this.array[0] * this.array[0]);
   }
   get isValid(){
-    if(this.array.length==4){
+    if(this.array.length==4&&this.perimeter/4==this.array[0]){
       return true;
     }
     else
